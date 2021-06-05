@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Quickstart</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+          <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/js/custom.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+      <link rel="shortcut icon" href="_static/logo.svg"/>
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Shinyhero36’s module" href="flask_assistant.html" />
+  <link rel="prev" title="Installation" href="installation.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Shinyhero36</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link  router-link-active">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link ">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link  router-link-active">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link ">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#user-s-guide">user's guide</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Quickstart</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#a-minimal-application" class="reference internal">A Minimal Application</a></li>
+                
+                  <li class="toctree-l2"><a href="#expose-your-application" class="reference internal">Expose your application</a></li>
+                
+                  <li class="toctree-l2"><a href="#handling-intents" class="reference internal">Handling intents</a></li>
+                
+                  <li class="toctree-l2"><a href="#richresponses" class="reference internal">RichResponses</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#api-reference">api reference</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="flask_assistant.html" class="reference internal ">Shinyhero36’s module</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#additional-notes">additional notes</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="notes.html" class="reference internal ">How to contribute</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Quickstart</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="installation.html"
+       title="previous chapter">← Installation</a>
+  </li>
+  <li class="next">
+    <a href="flask_assistant.html"
+       title="next chapter"><strong>Shinyhero36</strong>’s module →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>This guide assumes you are already familar with <a class="reference external" href="http://flask.pocoo.org">Flask</a> and that you have already install Flask and <strong>Shinyhero36</strong>. If that’s not the case head toward <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a></p>
+<div class="section" id="a-minimal-application">
+<h2>A Minimal Application<a class="headerlink" href="#a-minimal-application" title="Permalink to this headline">¶</a></h2>
+<p>A minimal <strong>Shinyhero36</strong> application looks something like this</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flask_assistant</span> <span class="kn">import</span> <span class="n">Assisttant</span><span class="p">,</span> <span class="n">SimpleResponse</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">ass</span> <span class="o">=</span> <span class="n">Assisttant</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="s2">&quot;/post&quot;</span><span class="p">)</span>
+
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;Welcome&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">welcome</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">ass</span><span class="o">.</span><span class="n">say</span><span class="p">([</span><span class="n">SimpleResponse</span><span class="p">(</span><span class="s2">&quot;Congrats!!&quot;</span><span class="p">,</span> <span class="s2">&quot;Congrats !! You made it!!&quot;</span><span class="p">)])</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>So what did that code do?</p>
+<ol class="arabic simple">
+<li><p>First, we imported the <a class="reference internal" href="flask_assistant.html#module-flask_assistant.Assistant" title="flask_assistant.Assistant"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assistant</span></code></a> and the <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleResponse</span></code>. The instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleResponse</span></code> will generate a simple response to your Google Assistant app</p></li>
+<li><p>Next we created an instance of the <a class="reference internal" href="flask_assistant.html#module-flask_assistant.Assistant" title="flask_assistant.Assistant"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assistant</span></code></a> which will handles webhooks and intent for us.
+The first parameter is an instance of Flask. The second one, is the endpoint our app will listen to.</p></li>
+<li><p>We then use the <code class="xref py py-meth docutils literal notranslate"><span class="pre">onIntent()</span></code> decorator to tell our app
+what function to execute when the ‘Welcome’ intent is triggered.</p></li>
+<li><p>The function returns a list of SimpleResponse. This will display “Congrats” and say “Congrats !! You made it!!” out loud.</p></li>
+</ol>
+<p>Save it as <code class="file docutils literal notranslate"><span class="pre">app.py</span></code> or something similar. Note that we’ve enabled Flask debugging mode to provide code reloading and better error messages.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python app.py
+<span class="go"> * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Debug mode should never be used in a production environment!</p>
+</div>
+</div>
+<div class="section" id="expose-your-application">
+<h2>Expose your application<a class="headerlink" href="#expose-your-application" title="Permalink to this headline">¶</a></h2>
+<p>To test this application we need to expose our Flask app. To do so, we use <a class="reference external" href="https://ngrok.com/">Ngrok</a>
+Once you installed it, run the following command</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ngrok http <span class="m">5000</span>
+<span class="go"> ngrok by @inconshreveable     (Ctrl+C to quit)</span>
+
+<span class="go"> Session Status                online</span>
+<span class="go"> Web Interface                 http://127.0.0.1:4040</span>
+<span class="go"> Forwarding                    http://e2a1794143e1.ngrok.io -&gt; http://localhost:5000</span>
+<span class="go"> Forwarding                    https://e2a1794143e1.ngrok.io -&gt; http://localhost:5000</span>
+
+<span class="go"> Connections                   ttl     opn     rt1     rt5     p50     p90</span>
+<span class="go">                               0       0       0.00    0.00    0.00    0.00</span>
+</pre></div>
+</div>
+<p>Copy the https links and set it as your fulfillment url</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>Note that the argument following http must be the port of your flask app.</p></li>
+<li><p>The fullliment url must be https</p></li>
+</ul>
+</div>
+<p>Now trigger the Welcome intent.
+You sould hear and see something like this</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/result_example.png"><img alt="Result" src="_images/result_example.png" style="width: 423.5px; height: 317.5px;" /></a>
+</div>
+<center>
+  <audio controls="controls">
+    <source src="_static/audio/example.mp3" type="audio/mp3">
+      Your browser does not support the <code>audio</code> element.
+   </audio>
+</center></div>
+<div class="section" id="handling-intents">
+<h2>Handling intents<a class="headerlink" href="#handling-intents" title="Permalink to this headline">¶</a></h2>
+<p>To handle intents you need to decorate your function with <code class="xref py py-meth docutils literal notranslate"><span class="pre">onIntent()</span></code> like so</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intent 1&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">something</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intent 2&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">something</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intent 3&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">something</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>It is possible to handle intents how weren’t registered. In this case, you need to decorate your function with <code class="xref py py-meth docutils literal notranslate"><span class="pre">flask_assistant.Assistant.defaultIntent()</span></code> like so</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intent 1&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">something</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">defaultIntent</span>
+<span class="k">def</span> <span class="nf">something</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="richresponses">
+<h2>RichResponses<a class="headerlink" href="#richresponses" title="Permalink to this headline">¶</a></h2>
+<p>You can use a rich response if you want to display visual elements to enhance user interactions with your app.
+Rich responses can appear on screen-only or audio and screen experiences.</p>
+<div class="section" id="simple-responses">
+<h3>Simple responses<a class="headerlink" href="#simple-responses" title="Permalink to this headline">¶</a></h3>
+<p>Simple responses take the form of a chat bubble visually and use text-to-speech (TTS) or Speech Synthesis Markup Language (SSML) for sound.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flask_asssistant</span> <span class="kn">import</span> <span class="n">SimpleResponse</span>
+
+<span class="o">...</span>
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intentName&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">welcome</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">ass</span><span class="o">.</span><span class="n">say</span><span class="p">([</span><span class="n">SimpleResponse</span><span class="p">(</span><span class="s2">&quot;Congrats !! You made it!!&quot;</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="suggestion-chips">
+<h3>Suggestion chips<a class="headerlink" href="#suggestion-chips" title="Permalink to this headline">¶</a></h3>
+<p>Suggestion chip take the form of a bubble at the bottom of the screen.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flask_asssistant</span> <span class="kn">import</span> <span class="n">SimpleResponse</span><span class="p">,</span> <span class="n">SuggestionChip</span>
+
+<span class="o">...</span>
+
+<span class="nd">@ass</span><span class="o">.</span><span class="n">onIntent</span><span class="p">(</span><span class="s2">&quot;intentName&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">welcome</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">ass</span><span class="o">.</span><span class="n">say</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">SimpleResponse</span><span class="p">(</span><span class="s2">&quot;Congrats !! You made it!!&quot;</span><span class="p">)],</span>
+        <span class="n">suggestions</span><span class="o">=</span><span class="p">[</span>
+            <span class="n">Suggestion</span><span class="p">(</span><span class="s2">&quot;I am a chip&quot;</span><span class="p">),</span>
+            <span class="n">Suggestion</span><span class="p">(</span><span class="s2">&quot;Me too !&quot;</span><span class="p">),</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>Simple response is mandatory. It’s not allowed to return Suggestion chips only.</p></li>
+<li><p>If you don’t provide a SimpleResponse, your app will crash</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="installation.html"
+       title="previous chapter">← Installation</a>
+  </li>
+  <li class="next">
+    <a href="flask_assistant.html"
+       title="next chapter"><strong>Shinyhero36</strong>’s module →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Shinyhero36.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

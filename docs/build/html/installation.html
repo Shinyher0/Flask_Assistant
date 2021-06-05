@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Installation</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+          <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/js/custom.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+      <link rel="shortcut icon" href="_static/logo.svg"/>
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Quickstart" href="quickstart.html" />
+  <link rel="prev" title="Welcome to Shinyhero36’s documentation" href="index.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Shinyhero36</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link  router-link-active">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link ">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link  router-link-active">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link ">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#user-s-guide">user's guide</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Installation</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#pip" class="reference internal">PIP</a></li>
+                
+                  <li class="toctree-l2"><a href="#python-version" class="reference internal">Python Version</a></li>
+                
+                  <li class="toctree-l2"><a href="#dependencies" class="reference internal">Dependencies</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="quickstart.html" class="reference internal ">Quickstart</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#api-reference">api reference</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="flask_assistant.html" class="reference internal ">Shinyhero36’s module</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#additional-notes">additional notes</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="notes.html" class="reference internal ">How to contribute</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Installation</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Welcome to <strong>Shinyhero36</strong>’s documentation</a>
+  </li>
+  <li class="next">
+    <a href="quickstart.html"
+       title="next chapter">Quickstart →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip">
+<h2>PIP<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h2>
+<p>Install <strong>Shinyhero36</strong> with <code class="docutils literal notranslate"><span class="pre">pip</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install reponame
+</pre></div>
+</div>
+<p>The development version can be downloaded from <a class="reference external" href="https://github.com/Shinyhero36/reponame">its page at GitHub</a>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/Shinyhero36/reponame
+<span class="gp">$ </span><span class="nb">cd</span> reponame
+<span class="gp">$ </span>python setup.py develop
+</pre></div>
+</div>
+</div>
+<div class="section" id="python-version">
+<h2>Python Version<a class="headerlink" href="#python-version" title="Permalink to this headline">¶</a></h2>
+<p>It’s recommended to use the latest version of Python. <strong>Shinyhero36</strong> support Python 3.6 and newer.</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p><strong>Shinyhero36</strong> has the following dependencies (which will be automatically
+installed if you use <code class="docutils literal notranslate"><span class="pre">pip</span></code>):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> version 2.0.X</p></li>
+</ul>
+<p><strong>Shinyhero36</strong> is now installed. Check out the <a class="reference internal" href="quickstart.html"><span class="doc">Quickstart</span></a> or go to the <a class="reference internal" href="index.html"><span class="doc">Documentation Overview</span></a>.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Welcome to <strong>Shinyhero36</strong>’s documentation</a>
+  </li>
+  <li class="next">
+    <a href="quickstart.html"
+       title="next chapter">Quickstart →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Shinyhero36.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Shinyhero36’s module</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+          <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/js/custom.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+      <link rel="shortcut icon" href="_static/logo.svg"/>
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="How to contribute" href="notes.html" />
+  <link rel="prev" title="Quickstart" href="quickstart.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Shinyhero36</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link ">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link  router-link-active">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#user-s-guide"
+         class="nav-link ">
+         user's guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#api-reference"
+         class="nav-link  router-link-active">
+         api reference
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#additional-notes"
+         class="nav-link ">
+         additional notes
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://pypi.org/"
+        class="nav-link external">
+          PyPI Releases <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//"
+        class="nav-link external">
+          Source Code <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://github.com/Shinyhero36//issues"
+        class="nav-link external">
+          Issue tracker <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#user-s-guide">user's guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="quickstart.html" class="reference internal ">Quickstart</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#api-reference">api reference</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Shinyhero36’s module</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-flask_assistant.Assistant" class="reference internal">Assistant class</a></li>
+                
+                  <li class="toctree-l2"><a href="#module-flask_assistant.RichResponses" class="reference internal">RichResponses module</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#additional-notes">additional notes</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="notes.html" class="reference internal ">How to contribute</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><strong>Shinyhero36</strong>’s module</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="quickstart.html"
+       title="previous chapter">← Quickstart</a>
+  </li>
+  <li class="next">
+    <a href="notes.html"
+       title="next chapter">How to contribute →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="project-s-module">
+<h1><strong>Shinyhero36</strong>’s module<a class="headerlink" href="#project-s-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-flask_assistant.Assistant">
+<span id="assistant-class"></span><h2>Assistant class<a class="headerlink" href="#module-flask_assistant.Assistant" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flask_assistant.Assistant.Assistant">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">flask_assistant.Assistant.</span></span><span class="sig-name descname"><span class="pre">Assistant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_auth_usr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_auth_pwd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.Assistant.Assistant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Flask Assistant helps linking your Google Assistant App with Flask via webhooks</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app</strong> (<em>Flask</em>) – a Flask application object</p></li>
+<li><p><strong>route</strong> (<em>str</em>) – Route at which your assistant will listen to.</p></li>
+<li><p><strong>basic_auth_usr</strong> (<em>str</em><em>, </em><em>optional</em>) – Username to use for basic auth</p></li>
+<li><p><strong>basic_auth_pwd</strong> (<em>str</em><em>, </em><em>optional</em>) – Password to use for basic auth</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flask_assistant.Assistant.Assistant.defaultResponse">
+<span class="sig-name descname"><span class="pre">defaultResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.Assistant.Assistant.defaultResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register a default function which serve as a default response if no intent was mapped</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>f</strong> (<em>function</em>) – A function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flask_assistant.Assistant.Assistant.init_app">
+<span class="sig-name descname"><span class="pre">init_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_auth_usr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basic_auth_pwd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.Assistant.Assistant.init_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the flask object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app</strong> (<em>Flask</em>) – a Flask application object</p></li>
+<li><p><strong>route</strong> (<em>str</em>) – Route at which your assistant will listen to.</p></li>
+<li><p><strong>basic_auth_usr</strong> (<em>str</em><em>, </em><em>optional</em>) – Username to use for basic auth</p></li>
+<li><p><strong>basic_auth_pwd</strong> (<em>str</em><em>, </em><em>optional</em>) – Password to use for basic auth</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Why an init_app function? See: <a class="reference external" href="https://flask.palletsprojects.com/en/2.0.x/extensiondev/#flask-extension-development">https://flask.palletsprojects.com/en/2.0.x/extensiondev/#flask-extension-development</a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flask_assistant.Assistant.Assistant.onIntent">
+<span class="sig-name descname"><span class="pre">onIntent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intentName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.Assistant.Assistant.onIntent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator which registers an actions’s view function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>intentName</strong> (<em>str</em>) – The name of the intent to map to a function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flask_assistant.Assistant.Assistant.say">
+<span class="sig-name descname"><span class="pre">say</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">responses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suggestions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endConversation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.Assistant.Assistant.say" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the json response</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>responses</strong> (<em>list</em>) – A list of rich responses</p></li>
+<li><p><strong>suggestions</strong> (<em>list</em><em>[</em><a class="reference internal" href="#flask_assistant.RichResponses.SuggestionChip" title="flask_assistant.RichResponses.SuggestionChip"><em>SuggestionChip</em></a><em>]</em><em>, </em><em>optional</em>) – A list of suggestion chips</p></li>
+<li><p><strong>endConversation</strong> (<em>bool</em><em>, </em><em>optional</em>) – Self explanatory</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>If the ‘responses’ parameter is empty, the app will crash</p></li>
+</ul>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An understandable response for the assistant</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-flask_assistant.RichResponses">
+<span id="richresponses-module"></span><h2>RichResponses module<a class="headerlink" href="#module-flask_assistant.RichResponses" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flask_assistant.RichResponses.SimpleResponse">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">flask_assistant.RichResponses.</span></span><span class="sig-name descname"><span class="pre">SimpleResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayText</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.RichResponses.SimpleResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Simple responses take the form of a chat bubble visually and use text-to-speech (TTS) or Speech Synthesis Markup Language (SSML) for sound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tts</strong> (<em>str</em>) – the text to say out loud</p></li>
+<li><p><strong>displayText</strong> (<em>str</em>) – the text to display</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>TTS text is used as chat bubble content by default. If the visual aspect of that text meets your needs, you won’t need to specify any display text for a chat bubble.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flask_assistant.RichResponses.SuggestionChip">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">flask_assistant.RichResponses.</span></span><span class="sig-name descname"><span class="pre">SuggestionChip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flask_assistant.RichResponses.SuggestionChip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SuggestionChip takes the form of a bubble at the bottom of the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The text to display on the chip</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="quickstart.html"
+       title="previous chapter">← Quickstart</a>
+  </li>
+  <li class="next">
+    <a href="notes.html"
+       title="next chapter">How to contribute →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Shinyhero36.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
